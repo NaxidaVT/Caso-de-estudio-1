@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave en el header */
+}
+
+header img {
+    height: 40px; /* Reducido ligeramente el tamaño del logo */
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px; /* Ajuste del margen del título */
+    font-size: 28px; /* Tamaño de fuente aumentado */
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave en la barra de navegación */
+    position: relative; /* Necesario para posicionar correctamente el botón */
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Estilos para la sección de bienvenida */
+#bienvenida {
+    background-color: #f9f9f9; /* Color de fondo más claro */
+    padding: 30px; /* Aumento del espacio interior */
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más definida */
+}
+
+/* Estilos para la sección de servicios */
+#servicios {
+    background-color: #f9f9f9; /* Color de fondo más claro */
+    padding: 30px; /* Aumento del espacio interior */
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más definida */
+}
+
+#servicios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#servicios li {
+    padding: 10px 0;
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    background-color: #f9f9f9; /* Color de fondo más claro */
+    padding: 30px; /* Aumento del espacio interior */
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más definida */
+}
+
+#contacto label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contacto input, #contacto textarea {
+    width: calc(100% - 20px); /* Ajuste del ancho para evitar desbordamientos */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contacto input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+#contacto input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Ajuste del padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100; /* Asegura que el footer esté por debajo del contenido principal */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave en el footer */
+}
+
+
+
+/* Estilos para el botón de cambio de color */
+#changeColorButton {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Ajuste la posición a la derecha */
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+#changeColorButton:hover {
+    background-color: #555;
+}
+
+body{
+    padding-bottom: 100px;
+}

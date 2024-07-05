@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <?php
+    // Crear variables con los h1
+    $tituloEncabezado = "Bienvenido a Mi Página Web";
+    $tituloServicios = "Servicios";
+    $tituloContacto = "Contacto";
+    
+    // Crear variable con la fecha de hoy
+    $fechaHoy = date("Y-m-d");
+    
+    // Crear una lista de servicios
+    $servicios = ["Servicio 1", "Servicio 2", "Servicio 3"];
+    ?>
+
+    <!-- Encabezado con un logo -->
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1><?php echo $tituloEncabezado; ?></h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <!-- Párrafo de bienvenida -->
+        <section id="bienvenida">
+            <p>¡Bienvenido a nuestra página web! Estamos aquí para ofrecerte los mejores servicios relacionados con nuestro canal de Twitch, Naxida_VT.</p>
+        </section>
+
+        <!-- Sección de servicios -->
+        <section id="servicios">
+            <h2><?php echo $tituloServicios; ?></h2>
+            <p>Estamos dedicados a ofrecerte una amplia gama de servicios diseñados específicamente para enriquecer tu experiencia en nuestro canal de Twitch, Naxida_VT. Desde transmisiones en vivo emocionantes hasta interacciones en comunidad, nuestro objetivo es asegurarnos de que cada visita a nuestra página web sea memorable y gratificante. Nos esforzamos por proporcionarte contenido de calidad, eventos emocionantes y soporte continuo para que disfrutes al máximo de tu tiempo con nosotros. Explora nuestras ofertas y únete a una comunidad vibrante donde tus intereses y pasiones siempre son nuestra prioridad.</p>
+            <ul>
+                <?php foreach ($servicios as $servicio) {
+                    echo "<li>$servicio</li>";
+                } ?>
+            </ul>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <h2><?php echo $tituloContacto; ?></h2>
+            <form id="contactForm" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+
+    <!-- Botón para cambiar el color de fondo -->
+    <button id="changeColorButton">Cambiar Color de Fondo</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Naxida_VT. Todos los derechos son tuyos, pero los momentos que compartimos son nuestros..</p>
+        <p>Fecha de hoy: <?php echo $fechaHoy; ?></p>
+    </footer>
+</body>
+</html>
